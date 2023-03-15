@@ -19,16 +19,16 @@ function sendEmail(content) {
 
 let form = document.querySelector("form");
 form.addEventListener("submit", event => {
-    var username = document.getElementById("username").value;
-    var email = document.getElementById("email").value;   
-    var feedback = document.getElementById("feedback").value;
+    let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;   
+    let feedback = document.getElementById("feedback").value;
 
    
-        var username_text = "From Name: " + username;
-        var email_text =" From Email: " + email;
-        var feedback_text =" Content is : " + feedback;
+        let username_text = "From Name: " + username;
+        let email_text =" From Email: " + email;
+        let feedback_text =" Content is : " + feedback;
 
-        var content_sent = "Feedback : " + username_text + email_text + feedback_text;
+        let content_sent = "Feedback : " + username_text + email_text + feedback_text;
         /* send to email */
 
         sendEmail(content_sent);
